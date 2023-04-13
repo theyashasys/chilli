@@ -49,7 +49,7 @@ stage ('Check-Git-Secrets') {
     
     stage ('Build') {
       steps {
-      sh 'mvn archetype:generate -DgroupId=com.sample.webproject -DartifactId=SampleWebApp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false'
+      sh 'mvn archetype:generate -DgroupId=com.example -DartifactId=chilli -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false'
       sh 'mvn compile war:war '
      // sh 'mvn clean package'
       }
