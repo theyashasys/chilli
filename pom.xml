@@ -34,7 +34,7 @@
              <configuration>
 			<url>http://172.29.87.55:8888/manager/text</url>
 			<server>tomcatserver</server>
-			<path>/web</path>
+			<path>/chilli</path>
 		    	<username>admin1</username>
        			<password>admin1</password>
 		        <update>true</update>
