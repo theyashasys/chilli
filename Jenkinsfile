@@ -48,8 +48,8 @@ stage ('Check-Git-Secrets') {
     }
     
     stage ('Build') {
-      steps {
-      sh 'mvn archetype:generate -DgroupId=com.example -DartifactId=chilli -DarchetypeArtifactId=maven-archetype-quickstart'
+      steps { 
+      sh 'jar cvf chilli.war'
       sh 'mvn compile war:war '
      // sh 'mvn clean package'
       }
