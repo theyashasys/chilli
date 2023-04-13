@@ -49,7 +49,7 @@ stage ('Check-Git-Secrets') {
     
     stage ('Build') {
       steps { 
-      sh 'jar cvf chilli.war'
+      sh 'jar -cvf chilli.war *.*'
       sh 'mvn compile war:war '
      // sh 'mvn clean package'
       }
